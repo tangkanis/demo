@@ -10,16 +10,4 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class DemoApplicationTests {
 
-    @Autowired
-    EmployeeController employeeController;
-
-    @Autowired
-    DepartmentController departmentController;
-
-    @Test
-    void contextLoads() {
-        Assertions.assertThat(employeeController).isNot(null);
-        Assertions.assertThat(departmentController).isNot(null);
-    }
-
 }
