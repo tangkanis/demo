@@ -70,7 +70,7 @@ public class DepartmentServiceTest {
             departmentService.getDepartmentById(1L);
         });
 
-//        assertEquals(HttpStatus.NOT_FOUND, exception.getStatus());
+        assertEquals(HttpStatus.NOT_FOUND, exception.getStatusCode());
         assertTrue(exception.getReason().contains("Department with id: 1 not found"));
     }
 
@@ -102,7 +102,7 @@ public class DepartmentServiceTest {
             departmentService.deleteDepartment(1L);
         });
 
-//        assertEquals(HttpStatus.NOT_FOUND, exception.getStatus());
+        assertEquals(HttpStatus.NOT_FOUND, exception.getStatusCode());
         assertTrue(exception.getReason().contains("Department with id: 1 not found"));
     }
 
@@ -125,7 +125,7 @@ public class DepartmentServiceTest {
             departmentService.updateDepartment(1L, departmentRequest);
         });
 
-//        assertEquals(HttpStatus.NOT_FOUND, exception.getStatus());
+        assertEquals(HttpStatus.NOT_FOUND, exception.getStatusCode());
         assertTrue(exception.getReason().contains("Department with id: 1 not found"));
     }
 }

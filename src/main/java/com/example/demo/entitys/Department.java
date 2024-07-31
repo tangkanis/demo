@@ -12,7 +12,7 @@ import java.util.Objects;
 @Table(name = "department")
 @AllArgsConstructor
 @NoArgsConstructor
-public class Department {
+public class Department extends AuditEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

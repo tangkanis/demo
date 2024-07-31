@@ -12,7 +12,7 @@ import java.util.Objects;
 @Table(name = "employee")
 @AllArgsConstructor
 @NoArgsConstructor
-public class Employee {
+public class Employee extends AuditEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "employee_id", nullable = false)
